@@ -1,15 +1,11 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc
-  labels:
-    cluster: teric-uat
-    region: asia-northeast1-b	
-  annotations:
-    volume.beta.kubernetes.io/storage-class: fast
+  name: database-persistent-volume-claim
 spec:
   accessModes:
-    - ReadWriteOnce
+  - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
+      storage: 50Gi
+  storageClassName: data-storage
