@@ -3,9 +3,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: gateway-pvc
 spec:
-  accessModes:
-  - ReadWriteOnce
   resources:
     requests:
-      storage: 50Gi
-  storageClassName: data-storage
+      storage: 15Gi
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: slow
