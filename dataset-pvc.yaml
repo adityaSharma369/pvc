@@ -1,7 +1,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: dataset-storage
+  name: dataset-data-storage
 spec:
   accessModes:
     - ReadWriteMany
