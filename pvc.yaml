@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: nfs
+  name: datastorage
 spec:
   capacity:
     storage: 10Gi
@@ -15,7 +15,7 @@ spec:
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: nfs
+  name: datastorage
 spec:
   accessModes:
     - ReadWriteMany
