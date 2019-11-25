@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mypvc
+  name: fileserver-claim
 spec:
   accessModes:
   - ReadWriteMany
+  storageClassName: "fileserver"
   resources:
     requests:
-      storage: 100Gi
-  storageClassName: standard
+      storage: 100G
